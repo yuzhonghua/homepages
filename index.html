@@ -1,0 +1,518 @@
+
+<!-- 用bootstrap写一个分类导航的网站，每一行是一个类别，后面跟着链接，界面美观 -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>分类导航网站</title>
+  <!-- 引入bootstrap的css文件 -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+  <!-- 使用bootstrap的navbar组件创建一个导航栏 -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">分类导航网站</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <!-- 使用bootstrap的nav-item和nav-link类创建导航项和链接 -->
+        <li class="nav-item active">
+          <a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./sub/english.html">英语</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./sub/ai.html">海外AI</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./sub/ai_china.html">国内AI</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./sub/testing.html">测试</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./sub/hotel.html">酒店</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./sub/program.html">编程</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./sub/free.html">免费资源</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">联系</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 使用bootstrap的row和col类创建一个网格布局 -->
+
+  <div class="row mt-4">
+
+    <!-- 重复上述步骤，创建其他类别和链接 -->
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-header">搜索引擎</div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="https://www.bing.com/">必应</a></li>
+            <li class="list-group-item"><a href="https://www.google.com/">google</a></li>
+            <li class="list-group-item"><a href="https://www.baidu.com/">百度</a></li>
+            <li class="list-group-item"><a href="#"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-header">酒店管理</div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="https://ebooking.ctrip.com/ebkovsroom/inventory/batchrateprice">携程</a></li>
+            <li class="list-group-item"><a href="https://eb.meituan.com/">美团</a></li>
+            <li class="list-group-item"><a href="https://hotel.zhuzher.com/">住哲</a></li>
+            <li class="list-group-item"><a href="https://www.luojiao1950.cn/">网站主页</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-header">也然酒店</div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="https://www.luojiao1950.cn/index.html">酒店管理系统</a></li>
+            <li class="list-group-item"><a href="https://www.luojiao1950.cn/fjp2.html">房价牌</a></li>
+            <li class="list-group-item"><a href="https://www.luojiao1950.cn/fjp3.html">房价推荐设置</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 使用bootstrap的card组件创建一个卡片，显示一个类别和对应的链接 -->
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-header">综合资讯</div>
+        <div class="card-body">
+          <!-- 使用bootstrap的list-group组件创建一个列表，显示链接 -->
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="https://mp.toutiao.com/profile_v4/index">头条号</a></li>
+            <li class="list-group-item"><a href="https://baijiahao.baidu.com/builder/theme/bjh/login">百家号</a></li>
+            <li class="list-group-item"><a href="https://om.qq.com/userAuth/index">企鹅号</a></li>
+            <li class="list-group-item"><a href="https://mp.dayu.com/">大鱼号</a></li>
+            <li class="list-group-item"><a href="https://app.follow.is/feeds/all/pending?view=0">Follow</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 重复上述步骤，创建其他类别和链接 -->
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-header">短视频</div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="https://www.douyin.com/">抖音</a></li>
+            <li class="list-group-item"><a href="https://www.kuaishou.com/cn">快手</a></li>
+            <li class="list-group-item"><a href="https://www.twitch.tv/">twitch</a></li>
+            <li class="list-group-item"><a href="#"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 重复上述步骤，创建其他类别和链接 -->
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-header">长视频</div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="https://www.bilibili.com/">B站</a></li>
+            <li class="list-group-item"><a href="https://www.youtube.com/">Youtube</a></li>
+            <li class="list-group-item"><a href="#"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row mt-4">
+    <!-- 使用bootstrap的card组件创建一个卡片，显示一个类别和对应的链接 -->
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-header">云资源</div>
+        <div class="card-body">
+          <!-- 使用bootstrap的list-group组件创建一个列表，显示链接 -->
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="https://cn.aliyun.com/">阿里云</a></li>
+            <li class="list-group-item"><a href="https://cloud.tencent.com/act/pro/618season?fromSource=gwzcw.7320583.7320583.7320583&utm_medium=cpc&utm_id=gwzcw.7320583.7320583.7320583">腾讯云</a></li>
+            <li class="list-group-item"><a href="https://azure.microsoft.com/en-us">Azure</a></li>
+            <li class="list-group-item"><a href="https://aws.amazon.com/cn/">AWS</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-header">小众云厂商</div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="https://www.579yun.cn/">579云</a></li>
+            <li class="list-group-item"><a href="#"></a></li>
+            <li class="list-group-item"><a href="#"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 重复上述步骤，创建其他类别和链接 -->
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-header">新闻</div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="https://apnews.com/">APN</a></li>
+            <li class="list-group-item"><a href="https://www.reuters.com/">reuters</a></li>
+            <li class="list-group-item"><a href="https://www.axios.com/">axios</a></li>
+            <li class="list-group-item"><a href="https://www.bloomberg.com/">bloomberg</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-header">国外免费网站托管</div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="https://vercel.com/">Vercel</a></li>
+            <li class="list-group-item"><a href="https://www.netlify.com/">netlify</a></li>
+            <li class="list-group-item"><a href="https://pages.cloudflare.com/">cloudflare</a></li>
+            <li class="list-group-item"><a href="https://www.cloudns.net/">cloudNS</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 使用bootstrap的card组件创建一个卡片，显示一个类别和对应的链接 -->
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-header">VPN</div>
+        <div class="card-body">
+          <!-- 使用bootstrap的list-group组件创建一个列表，显示链接 -->
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="https://10beasts.net/recommend/">Barry测评</a></li>
+            <li class="list-group-item"><a href="https://justmysocks3.net/members/clientarea.php">Just My Socks</a></li>
+            <li class="list-group-item"><a href="https://www.nicecloud.me/">Nice Cloud</a></li>
+            <li class="list-group-item"><a href="#"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-header">腾讯</div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="https://mp.weixin.qq.com/">微信公众平台</a></li>
+            <li class="list-group-item"><a href="https://mp.weixin.qq.com/cgi-bin/wx">微信小程序</a></li>
+            <li class="list-group-item"><a href="#"></a></li>
+            <li class="list-group-item"><a href="#"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row mt-4">
+
+    <!-- 使用bootstrap的card组件创建一个卡片，显示一个类别和对应的链接 -->
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-header">项目管理</div>
+        <div class="card-body">
+          <!-- 使用bootstrap的list-group组件创建一个列表，显示链接 -->
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="https://trello.com/">Trello</a></li>
+            <li class="list-group-item"><a href="https://asana.com/">asana</a></li>
+            <li class="list-group-item"><a href="https://www.notion.so/">notion</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 使用bootstrap的card组件创建一个卡片，显示一个类别和对应的链接 -->
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-header">免费音乐</div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="https://studio.youtube.com/channel/UCTrQWkr2dYjzgeV4W6Opl9w/music">youtube曲库</a></li>
+            <li class="list-group-item"><a href="https://www.tosound.com/">淘声网</a></li>
+            <li class="list-group-item"><a href="https://www.fiftysounds.com/zh/">FIFTYSOUNDS</a></li>
+            <li class="list-group-item"><a href="https://www.zhihu.com/question/33199927">知乎问答</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 使用bootstrap的card组件创建一个卡片，显示一个类别和对应的链接 -->
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-header">免费图片</div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="https://pixabay.com/zh/videos/">pixabay</a></li>
+            <li class="list-group-item"><a href="https://www.pexels.com/zh-cn/">pexels</a></li>
+            <li class="list-group-item"><a href="https://unsplash.com/">unsplash</a></li>
+            <li class="list-group-item"><a href="https://www.flickr.com/">flickr</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 重复上述步骤，创建其他类别和链接 -->
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-header">免费视频素材</div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="https://www.mixkit.cc/">mixkit</a></li>
+            <li class="list-group-item"><a href="https://pixabay.com/zh/videos/">pixabay</a></li>
+            <li class="list-group-item"><a href="https://zhuanlan.zhihu.com/p/447414319">知乎问答</a></li>
+            <li class="list-group-item"><a href="#"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- 重复上述步骤，创建其他类别和链接 -->
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-header">数字人</div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="https://www.d-id.com/">D-ID</a></li>
+            <li class="list-group-item"><a href="#"></a></li>
+            <li class="list-group-item"><a href="#"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-header">电子书</div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="https://singlelogin.re/">Z-library</a></li>
+            <li class="list-group-item"><a href="https://xmsoushu.com/?hao.su#/">熊猫搜书</a></li>
+            <li class="list-group-item"><a href="https://www.toplinks.cc/s/">淘链客</a></li>
+            <li class="list-group-item"><a href="https://annas-archive.org/">Anna’s Archive</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row mt-4">
+    <!-- 使用bootstrap的card组件创建一个卡片，显示一个类别和对应的链接 -->
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-header">笔记</div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="https://www.notion.so/">Notion</a></li>
+            <li class="list-group-item"><a href="https://note.youdao.com/">有道云笔记</a></li>
+            <li class="list-group-item"><a href="https://evernote.com/intl/zh-cn">Evernote</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 重复上述步骤，创建其他类别和链接 -->
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-header">图像处理AI</div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="https://www.adobe.com/sensei/generative-ai/firefly.html#">FireFly</a></li>
+            <li class="list-group-item"><a href="https://clipdrop.co/">ClipDrop</a></li>
+            <li class="list-group-item"><a href="#"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-header">内容输出</div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="https://xxz.toutiao.com/#/">新写作大赛</a></li>
+            <li class="list-group-item"><a href="#"></a></li>
+            <li class="list-group-item"><a href="#"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 使用bootstrap的card组件创建一个卡片，显示一个类别和对应的链接 -->
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-header">人工智能</div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="https://tianchi.aliyun.com/competition/activeList">天池</a></li>
+            <li class="list-group-item"><a href="https://algo.weixin.qq.com/">微信大数据挑战赛</a></li>
+            <li class="list-group-item"><a href="https://aistudio.baidu.com/aistudio/competition">百度AI Studio</a></li>
+            <li class="list-group-item"><a href="https://www.kaggle.com/">kaggle</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 重复上述步骤，创建其他类别和链接 -->
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-header">网络安全</div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="https://www.wangdingcup.com/">网鼎杯安全竞赛</a></li>
+            <li class="list-group-item"><a href="https://dsic.tencent.com/index.html#introduction">腾讯数字安全创新大赛</a></li>
+            <li class="list-group-item"><a href="#"></a></li>
+            <li class="list-group-item"><a href="#"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-header">专业文献</div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="https://arxiv.org/">arxic</a></li>
+            <li class="list-group-item"><a href="https://www.wikipedia.org/">wikipedia</a></li>
+            <li class="list-group-item"><a href="https://www.freecodecamp.org/learn/">freecodecamp</a></li>
+            <li class="list-group-item"><a href="https://www.reddit.com/">reddit</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row mt-4">
+    <!-- 使用bootstrap的card组件创建一个卡片，显示一个类别和对应的链接 -->
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-header">邮箱</div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="https://outlook.live.com/mail/0/junkemail">hotmail</a></li>
+            <li class="list-group-item"><a href="https://mail.10086.cn/">139邮箱</a></li>
+            <li class="list-group-item"><a href="https://mail.qq.com/">qq邮箱</a></li>
+            <li class="list-group-item"><a href="https://mail.aliyun.com/alimail/">阿里云邮箱</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 重复上述步骤，创建其他类别和链接 -->
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-header">医疗</div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="http://rank.cn-healthcare.com/">医院排行榜</a></li>
+            <li class="list-group-item"><a href="#"></a></li>
+            <li class="list-group-item"><a href="#"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-header">教育</div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="https://www.topuniversities.com/">大学排名QS</a></li>
+            <li class="list-group-item"><a href="#">教育政策</a></li>
+            <li class="list-group-item"><a href="#">教育资源</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 使用bootstrap的card组件创建一个卡片，显示一个类别和对应的链接 -->
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-header">英语</div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="https://www.quword.com/root/search?wd=trans">词根</a></li>
+            <li class="list-group-item"><a href="#"></a></li>
+            <li class="list-group-item"><a href="#"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 重复上述步骤，创建其他类别和链接 -->
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-header">英文教材</div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="https://elt.oup.com/learning_resources/?cc=global&selLanguage=en">牛津</a></li>
+            <li class="list-group-item"><a href="https://www.cambridge.org/hk/cambridgeenglish/catalog">剑桥</a></li>
+            <li class="list-group-item"><a href="https://www.pearson.com/languages/all-courses-and-tests.html">培生</a></li>
+            <li class="list-group-item"><a href="https://eltngl.com/">国家地理</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-header">英文分级</div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="https://www.readinga-z.com/">raz</a></li>
+            <li class="list-group-item"><a href="https://global.oup.com/education/content/primary/series/oxford-reading-tree/?region=uk">牛津树</a></li>
+            <li class="list-group-item"><a href="https://supersimple.com/super-simple-songs/">super simple songs</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 重复上述步骤，创建更多行的类别和链接 -->
+  <!-- 省略... -->
+
+</div>
+
+</body>
+</html>
